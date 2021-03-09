@@ -11,9 +11,10 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   padding-left: 2rem;
   padding-right: 2rem;
+  overflow: hidden;
 }
 
 a {
@@ -34,12 +35,12 @@ a {
   font-weight: bold;
 }
 
-.menu-list {
+.nav-menu-list {
   display: flex;
   list-style: none;
 }
 
-.menu-link {
+.nav-menu-link {
   padding: 1rem 2rem;
   color: white;
   letter-spacing: 1px;
@@ -48,7 +49,7 @@ a {
   position: relative;
 }
 
-.menu-link::before {
+.nav-menu-link::before {
   content: "";
   width: 20%;
   height: 3px;
@@ -60,11 +61,11 @@ a {
   transition: 0.4s all;
 }
 
-.menu-link.active::before {
+.nav-menu-link.active::before {
   background: #ee5253;
 }
 
-.menu-link:hover::before {
+.nav-menu-link:hover::before {
   width: 50%;
   background: #ee5253;
 }
@@ -75,10 +76,6 @@ a {
 
 .tab-content.active {
   display: block;
-}
-
-.hero-text {
-  color: white;
 }
 
 .heading {
@@ -101,14 +98,45 @@ a {
   letter-spacing: 1px;
 }
 
-.hero-text {
+.hero {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 3rem;
+  padding: 3rem;
+  left: 0;
+  right: 0;
+  color: white;
+  max-height: 90vh;
+  overflow-y: auto;
+  margin-top: 3rem;
 }
 
 .text {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.card {
+  display: flex;
+  background: white;
+  box-shadow: 0 0 5px rgb(0 0 0 / 36%);
+  border-radius: 10px;
+  color: black;
+}
+
+.card .card-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.card-body {
+  padding: 1rem;
 }

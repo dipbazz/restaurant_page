@@ -2,12 +2,12 @@
 const homePage = (() => {
   const root = document.getElementById('content');
   const element = document.createElement('div');
-  element.classList.add(...['tab-content', 'active']);
+  element.classList.add(...['tab-content', 'activ']);
   element.setAttribute('id', 'home');
 
   element.innerHTML =
   `
-  <div class="hero-text">
+  <div class="hero homepage">
     <h1 class="heading">Are you hungry?</h1>
     <p class="text">Have a quick look of our menu and order what you want.</p>
 

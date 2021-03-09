@@ -5,7 +5,7 @@ import aboutPage from './aboutPage'
 import contactPage from './contactPage'
 
 const changeTabContent = (item) => {
-  document.querySelectorAll('.menu-link').forEach((element) => {
+  document.querySelectorAll('.nav-menu-link').forEach((element) => {
     element.classList.remove('active');
   });
 
@@ -17,7 +17,7 @@ const changeTabContent = (item) => {
   document.querySelector(target).classList.add('active');
 }
 
-document.querySelectorAll('.menu-link').forEach((item) => {
+document.querySelectorAll('.nav-menu-link').forEach((item) => {
   item.addEventListener('click', () => {
     changeTabContent(item)
   });

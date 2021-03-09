@@ -8,12 +8,12 @@ const pageLoad = (() => {
         <a href="#">Hungry Kitchen</a>
       </div>
 
-      <div class="menu">
-        <ul class="menu-list">
-          <li class="menu-item"><a href="#" class="menu-link active" data-target="#home">Home</a></li>
-          <li class="menu-item"><a href="#" class="menu-link" data-target="#menu">Menu</a></li>
-          <li class="menu-item"><a href="#" class="menu-link" data-target="#about">About</a></li>
-          <li class="menu-item"><a href="#" class="menu-link" data-target="#contact">Contact</a></li>
+      <div class="nav-menu">
+        <ul class="nav-menu-list">
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link active" data-target="#home">Home</a></li>
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link" data-target="#menu">Menu</a></li>
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link" data-target="#about">About</a></li>
+          <li class="nav-menu-item"><a href="#" class="nav-menu-link" data-target="#contact">Contact</a></li>
         </ul>
       </div>
     </header>

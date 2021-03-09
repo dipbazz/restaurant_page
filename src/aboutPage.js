@@ -6,7 +6,7 @@ const aboutPage = (() => {
 
   element.innerHTML =
   `
-    <div class="hero-text">
+    <div class="hero">
       <h1 class="heading">Are you hungry?</h1>
       <p class="text">From about to test.</p>
 
