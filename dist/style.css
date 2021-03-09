@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+#content {
+  background: url(images/food.jpg), rgb(34 48 63 / 65%);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo a {
+  color: white;
+  font-size: 2rem;
+  font-family: 'Great Vibes', cursive;
+  font-weight: bold;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+}
+
+.menu-link {
+  padding: 1rem 2rem;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  display: block;
+  position: relative;
+}
+
+.menu-link::before {
+  content: "";
+  width: 20%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  /* left: 50%;
+  transform: translateX(-50%); */
+  border-radius: 50px;
+  transition: 0.4s all;
+}
+
+.menu-link.active::before {
+  background: #ee5253;
+}
+
+.menu-link:hover::before {
+  width: 50%;
+  background: #ee5253;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.hero-text {
+  color: white;
+}
+
+.heading {
+  font-family: 'Great Vibes', cursive;
+}
+
+.btn {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  display: inline-block;
+  border-radius: 0.4rem;
+}
+
+.menu-btn {
+  background-color: #ee5253;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3rem;
+}
+
+.text {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
