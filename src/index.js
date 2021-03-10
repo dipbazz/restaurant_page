@@ -22,3 +22,7 @@ document.querySelectorAll('.nav-menu-link').forEach((item) => {
     changeTabContent(item)
   });
 });
+
+document.querySelector('#menu-btn').addEventListener('click', () => {
+  document.querySelector('[data-target="#menu"]').click();
+})

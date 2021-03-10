@@ -21,6 +21,22 @@ a {
   text-decoration: none;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.link {
+  color: #2e86de;
+  font-weight: bold;
+}
+
+.center-card {
+  display: inline-block;
+  padding: 3rem;
+  background: rgb(87 101 116 / 45%);
+  border-radius: 20px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -119,7 +135,7 @@ a {
 .card-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2rem;
+  grid-gap: 2.4rem;
 }
 
 .card {
@@ -128,15 +144,76 @@ a {
   box-shadow: 0 0 5px rgb(0 0 0 / 36%);
   border-radius: 10px;
   color: black;
+  padding: 0.4rem;
 }
 
 .card .card-img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px 0 0 10px;
+  width: 120px;
+  height: 100px;
 }
 
 .card-body {
   padding: 1rem;
+  width: 100%;
+  position: relative;
+}
+
+.card-title {
+  font-weight: 500;
+  padding-bottom: 0.4rem;
+  color: #535353;
+}
+
+.card-subtitle {
+  color: #6b7782;
+  font-size: 1rem;
+}
+
+.card-body .price {
+  position: absolute;
+  display: block;
+  top: -30px;
+  right: -20px;
+  background: red;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.menu-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  height: unset;
+  padding: 0.75rem;
+  padding-top: 1.8rem;
+  border-width: 2px;
+  display: block;
+  font-size: 1.2rem;
+  color: white;
+  min-width: 400px;
+}
+
+.contact {
+  margin-top: 2rem;
+  border-top: 1px solid rgb(221, 221, 221);
+  padding-top: 1rem;
+}
+
+.contact-number {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 0.5rem;
 }

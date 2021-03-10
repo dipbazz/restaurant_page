@@ -6,12 +6,18 @@ const aboutPage = (() => {
 
   element.innerHTML =
   `
-    <div class="hero">
-      <h1 class="heading">Are you hungry?</h1>
-      <p class="text">From about to test.</p>
+  <div class="hero">
+    <div class="menu-container text-center">
+      <div class="center-card">
+        <h1 class="heading">About project</h1>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Earum natus eius ullam enim illum, voluptas architecto aperiam nam quod facere.</p>
 
-      <a href="#" class="btn menu-btn">Menu</a>
+        <div class="contact">
+          <p> Created and designed by <a href="https://github.com/dipbazz" class="link">Dipesh Bajgain</a></p>
+        </div>
+      </div>
     </div>
+  </div>
   `
   root.appendChild(element);
 })();
