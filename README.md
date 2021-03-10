@@ -47,8 +47,9 @@ Follow along the steps below to get a copy at your local machine.
 
 - Navigate to the directory where you want this project to clone and then clone it `git clone https://github.com/dipbazz/restaurant_page.git`
 - Navigate to the `restaurant_page` directory
-- install the npm package with `npm install`
-- Open the `dist/index.html` file in the browser of your choice.
+- Install the npm package with `npm install`
+- Start the server with `npm run start`
+- The site should automatically open in your browser at http://localhost:8080/ if it didn't then open your browser with that link.
 
 ## Authors
 
