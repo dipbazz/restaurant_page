@@ -1,11 +1,10 @@
-const contactPage = (() => {
+const contactPage = () => {
   const root = document.getElementById('content');
   const element = document.createElement('div');
   element.classList.add('tab-content');
   element.setAttribute('id', 'contact');
 
-  element.innerHTML =
-  `
+  element.innerHTML = `
   <div class="hero">
     <div class="menu-container text-center">
       <div class="center-card">
@@ -38,8 +37,8 @@ const contactPage = (() => {
       </div>
     </div>
   </div>
-  `
+  `;
   root.appendChild(element);
-})();
+};
 
 export default contactPage;

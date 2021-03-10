@@ -1,8 +1,7 @@
-const pageLoad = (() => {
+const pageLoad = () => {
   const root = document.getElementById('content');
   const element = document.createElement('div');
-  element.innerHTML =
-  `
+  element.innerHTML = `
     <header class="navbar">
       <div class="logo">
         <a href="#">Hungry Kitchen</a>
@@ -17,8 +16,8 @@ const pageLoad = (() => {
         </ul>
       </div>
     </header>
-  `
+  `;
   root.appendChild(element);
-})();
+};
 
 export default pageLoad;

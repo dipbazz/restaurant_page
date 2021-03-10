@@ -1,11 +1,10 @@
-const menuPage = (() => {
+const menuPage = () => {
   const root = document.getElementById('content');
   const element = document.createElement('div');
   element.classList.add('tab-content');
   element.setAttribute('id', 'menu');
 
-  element.innerHTML =
-  `
+  element.innerHTML = `
   <div class="hero">
     <div class="menu-container">
         <ul class="card-list">
@@ -71,8 +70,8 @@ const menuPage = (() => {
         </ul>
     </div>
   </div>
-  `
+  `;
   root.appendChild(element);
-})();
+};
 
 export default menuPage;

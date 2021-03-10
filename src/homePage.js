@@ -1,12 +1,11 @@
 
-const homePage = (() => {
+const homePage = () => {
   const root = document.getElementById('content');
   const element = document.createElement('div');
   element.classList.add(...['tab-content', 'active']);
   element.setAttribute('id', 'home');
 
-  element.innerHTML =
-  `
+  element.innerHTML = `
   <div class="hero">
     <div class="menu-container text-center">
       <div class="center-card">
@@ -17,8 +16,8 @@ const homePage = (() => {
       </div>
     </div>
   </div>
-  `
+  `;
   root.appendChild(element);
-})();
+};
 
 export default homePage;
