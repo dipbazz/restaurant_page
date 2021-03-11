@@ -1,0 +1,37 @@
+{
+  "name": "restaurant_page",
+  "version": "1.0.0",
+  "description": "Restaurant page using JavaScript where user can view menu's and get the contact details.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --watch",
+    "start": "webpack serve --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dipbazz/restaurant_page.git"
+  },
+  "author": "Dipesh Bajgain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dipbazz/restaurant_page/issues"
+  },
+  "homepage": "https://github.com/dipbazz/restaurant_page#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.17.2",
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {}
+}

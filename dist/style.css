@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+#content {
+  background: url(images/food.jpg), rgb(34 48 63 / 65%);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.link {
+  color: #2e86de;
+  font-weight: bold;
+}
+
+.center-card {
+  display: inline-block;
+  padding: 3rem;
+  background: rgb(87 101 116 / 45%);
+  border-radius: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo a {
+  color: white;
+  font-size: 2rem;
+  font-family: 'Great Vibes', cursive;
+  font-weight: bold;
+}
+
+.nav-menu-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu-link {
+  padding: 1rem 2rem;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  display: block;
+  position: relative;
+}
+
+.nav-menu-link::before {
+  content: "";
+  width: 20%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50px;
+  transition: 0.4s all;
+}
+
+.nav-menu-link.active::before {
+  background: #ee5253;
+}
+
+.nav-menu-link:hover::before {
+  width: 50%;
+  background: #ee5253;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.heading {
+  font-family: 'Great Vibes', cursive;
+}
+
+.btn {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  display: inline-block;
+  border-radius: 0.4rem;
+}
+
+.menu-btn {
+  background-color: #ee5253;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 3rem;
+  left: 0;
+  right: 0;
+  color: white;
+  max-height: 90vh;
+  overflow-y: auto;
+  margin-top: 3rem;
+}
+
+.text {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2.4rem;
+}
+
+.card {
+  display: flex;
+  background: white;
+  box-shadow: 0 0 5px rgb(0 0 0 / 36%);
+  border-radius: 10px;
+  color: black;
+  padding: 0.4rem;
+}
+
+.card .card-img {
+  width: 120px;
+  height: 100px;
+}
+
+.card-body {
+  padding: 1rem;
+  width: 100%;
+  position: relative;
+}
+
+.card-title {
+  font-weight: 500;
+  padding-bottom: 0.4rem;
+  color: #535353;
+}
+
+.card-subtitle {
+  color: #6b7782;
+  font-size: 1rem;
+}
+
+.card-body .price {
+  position: absolute;
+  display: block;
+  top: -30px;
+  right: -20px;
+  background: red;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.menu-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  height: unset;
+  padding: 0.75rem;
+  padding-top: 1.8rem;
+  border-width: 2px;
+  display: block;
+  font-size: 1.2rem;
+  color: white;
+  min-width: 400px;
+}
+
+.contact {
+  margin-top: 2rem;
+  border-top: 1px solid rgb(221, 221, 221);
+  padding-top: 1rem;
+}
+
+.contact-number {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
