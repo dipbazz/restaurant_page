@@ -71,8 +71,6 @@ a {
   height: 3px;
   position: absolute;
   bottom: 0;
-  /* left: 50%;
-  transform: translateX(-50%); */
   border-radius: 50px;
   transition: 0.4s all;
 }
